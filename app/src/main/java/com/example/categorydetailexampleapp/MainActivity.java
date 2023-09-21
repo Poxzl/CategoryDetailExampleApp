@@ -6,6 +6,11 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final Food[] myBreakfast = {
+            new Food("Pancakes", 6.99, "4 pancakes"),
+            new Food("Waffles", 7.50, "Crispy Golden Brown")
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
