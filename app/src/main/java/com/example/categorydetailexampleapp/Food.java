@@ -6,11 +6,26 @@ import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
 
+import java.util.ArrayList;
+
 public class Food implements Parcelable {
     private String name;
     private double price;
     private String desc;
     private int imageResourceID = 0;
+
+    public static final Food[] breakfastItems = {
+        new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes)
+    };
+
+    public static final Food[] lunchItems = {
+            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes)
+    };
+    public static final Food[] dinnerItems = {
+            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes)
+    };
+
+
 
     // A default constructor is required for the Parceable interface to work
     public Food() {
@@ -20,8 +35,21 @@ public class Food implements Parcelable {
         imageResourceID = 0;
     }
 
+    public Food(String food, double dollarPrice, String type, int image) {
+        name = "food";
+        price = dollarPrice;
+        desc = "type";
+        imageResourceID = image;
+    }
+
     public String toString() {
         return this.name;
+    }
+    public int getImageResourceID(){
+        return imageResourceID;
+    }
+    public int setImageResourceID(int imageNum){
+        return imageResourceID = imageNum;
     }
 
     /** This is a "constructor" of sorts that is needed with the Parceable interface to
