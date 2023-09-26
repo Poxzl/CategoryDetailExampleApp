@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -15,6 +16,11 @@ public class DetailActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         try {
+            TextView name = findViewById(R.id.name);
+            TextView price = findViewById(R.id.price);
+            //TextView type = findViewById(R.id.);
+            //TextView image = findViewById(R.id.);
+
             // This gets the particular Detailed object we are displaying
             // In this case, it is a Food object.
             Food myFood = intent.getParcelableExtra("Chosen Food");
@@ -25,7 +31,7 @@ public class DetailActivity extends AppCompatActivity {
                 // set a default pic or decide what to do in this case.
             }
             else {
-// replace the ___ with your ImageView variable
+        // replace the ___ with your ImageView variable
                 myFood.setImageResourceID(myFood.getImageResourceID());
             }
         }

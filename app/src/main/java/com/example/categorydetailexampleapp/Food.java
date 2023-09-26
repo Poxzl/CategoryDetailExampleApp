@@ -15,7 +15,7 @@ public class Food implements Parcelable {
     private int imageResourceID = 0;
 
     public static final Food[] breakfastItems = {
-        new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes)
+            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes)
     };
 
     public static final Food[] lunchItems = {
@@ -36,9 +36,9 @@ public class Food implements Parcelable {
     }
 
     public Food(String food, double dollarPrice, String type, int image) {
-        name = "food";
+        name = food;
         price = dollarPrice;
-        desc = "type";
+        desc = type;
         imageResourceID = image;
     }
 

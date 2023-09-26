@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -21,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> listView,
                                     View itemView, int position, long id) {
                 Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
-
 
                 // create an ArrayList of whatever type of data you are displaying in this app
                 // In this particular app, everything is centralized around the Food class.
@@ -52,5 +52,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         };
+        ListView listView = (ListView) findViewById(R.id.list_options);
+        //Add the listener to the ListView
+        // without this line of code, the listView isn’t interactive!!!!
+        listView.setOnItemClickListener(itemClickListener);
     }
 }
