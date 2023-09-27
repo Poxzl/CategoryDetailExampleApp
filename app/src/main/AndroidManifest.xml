@@ -15,7 +15,7 @@
         <activity
             android:name=".DetailActivity"
             android:label="DetailPage"
-            android:parentActivityName=".CategoryActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".CategoryActivity"

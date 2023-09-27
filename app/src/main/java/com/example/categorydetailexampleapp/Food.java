@@ -15,14 +15,20 @@ public class Food implements Parcelable {
     private int imageResourceID = 0;
 
     public static final Food[] breakfastItems = {
-            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes)
+            new Food("Pancakes", 2.99, "4 pancakes", R.drawable.pancakes),
+            new Food("Waffles", 3.99, "4 pancakes", R.drawable.pancakes),
+            new Food("Cookie", 2.99, "4 pancakes", R.drawable.pancakes),
     };
 
     public static final Food[] lunchItems = {
-            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes)
+            new Food("Pizza", 5.99, "4 pancakes", R.drawable.pancakes),
+            new Food("PB&J", 3.99, "4 pancakes", R.drawable.pancakes),
+            new Food("Breadsticks", 3.99, "4 pancakes", R.drawable.pancakes),
     };
     public static final Food[] dinnerItems = {
-            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes)
+            new Food("Wings", 8.99, "4 pancakes", R.drawable.pancakes),
+            new Food("Club Sandwich", 10.99, "4 pancakes", R.drawable.pancakes),
+            new Food("Chicken Tika Masala", 11.99, "4 pancakes", R.drawable.pancakes),
     };
 
 
