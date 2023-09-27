@@ -45,6 +45,12 @@ public class Food implements Parcelable {
     public String toString() {
         return this.name;
     }
+    public double getPrice(){
+        return price;
+    }
+    public String getDesc() {
+        return desc;
+    }
     public int getImageResourceID(){
         return imageResourceID;
     }

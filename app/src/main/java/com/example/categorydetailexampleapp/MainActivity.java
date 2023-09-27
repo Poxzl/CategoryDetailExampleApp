@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
-            public void onItemClick(AdapterView<?> listView,
-                                    View itemView, int position, long id) {
+            public void onItemClick(AdapterView<?> listView, View itemView, int position, long id) {
                 Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
 
                 // create an ArrayList of whatever type of data you are displaying in this app
