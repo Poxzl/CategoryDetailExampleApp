@@ -31,7 +31,7 @@ public class DetailActivity extends AppCompatActivity {
 
             name.setText(myFood.toString());
             type.setText(myFood.getDesc());
-            price.setText(Double.toString(myFood.getPrice()));
+            price.setText(Double.toString(myFood.getPrice()) + "$");
             image.setImageResource(myFood.getImageResourceID());
 
             if (myFood.getImageResourceID() == 0) {

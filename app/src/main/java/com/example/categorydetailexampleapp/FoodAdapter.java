@@ -31,7 +31,7 @@ public class FoodAdapter extends ArrayAdapter<Food> {
         // Step 2: Populate the specific row data into the variables you made in step 1
 
         nameText.setText(myFood.toString());
-        priceText.setText(Double.toString(myFood.getPrice()));
+        priceText.setText(Double.toString(myFood.getPrice()) +"$");
         image.setImageResource(myFood.getImageResourceID());
         descText.setText(myFood.getDesc());
 

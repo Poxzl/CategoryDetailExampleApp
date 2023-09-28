@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HAPPY</string>
+    <string name="app_name">HAPPY RESTAURANT</string>
     <string-array name="options">
         <item>Breakfast</item>
         <item>Lunch</item>

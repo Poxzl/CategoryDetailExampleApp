@@ -15,20 +15,20 @@ public class Food implements Parcelable {
     private int imageResourceID = 0;
 
     public static final Food[] breakfastItems = {
-            new Food("Pancakes", 2.99, "4 pancakes", R.drawable.pancakes),
-            new Food("Waffles", 3.99, "4 pancakes", R.drawable.pancakes),
-            new Food("Cookie", 2.99, "4 pancakes", R.drawable.cookie),
+            new Food("Pancakes", 2.99, "4 pancakes.", R.drawable.pancakes),
+            new Food("Waffles", 3.99, "Complimentary syrup and butter on the side.", R.drawable.waffles),
+            new Food("Cookie", 2.99, "Chocolate-Chip cookie, freshly baked.", R.drawable.cookie),
     };
 
     public static final Food[] lunchItems = {
-            new Food("Pizza", 5.99, "4 pancakes", R.drawable.pancakes),
-            new Food("PB&J", 3.99, "4 pancakes", R.drawable.pancakes),
-            new Food("Breadsticks", 3.99, "4 pancakes", R.drawable.pancakes),
+            new Food("Pizza", 5.99, "Warm, toasty bread full of cheese.", R.drawable.pizza),
+            new Food("PB&J", 3.99, "Peanut, Butter, and Jelly all in one.", R.drawable.pbj),
+            new Food("Breadsticks", 3.99, "crunchy, warm, and soft. Butter on the side.", R.drawable.breadsticks),
     };
     public static final Food[] dinnerItems = {
-            new Food("Wings", 8.99, "4 pancakes", R.drawable.pancakes),
-            new Food("Club Sandwich", 10.99, "4 pancakes", R.drawable.pancakes),
-            new Food("Chicken Tika Masala", 11.99, "4 pancakes", R.drawable.pancakes),
+            new Food("Wings", 8.99, "Chicken Wings. Choose between ranch, spicy, or buffalo sauce.", R.drawable.wings),
+            new Food("Club Sandwich", 10.99, "Choose between chicken, bacon, or eggs.", R.drawable.clubsandwich),
+            new Food("Chicken Tikka Masala", 11.99, "Spicy chicken curry with rice", R.drawable.chickentikkamasala),
     };
 
 
