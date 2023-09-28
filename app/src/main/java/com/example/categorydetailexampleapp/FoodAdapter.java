@@ -24,6 +24,7 @@ public class FoodAdapter extends ArrayAdapter<Food> {
         // Step 1: Connect XML references for YOUR custom view
         TextView nameText = convertView.findViewById(R.id.name);
         TextView priceText = convertView.findViewById(R.id.price);
+        TextView descText = convertView.findViewById(R.id.descView);
         ImageView image = convertView.findViewById(R.id.imageView);
 
 
@@ -32,6 +33,7 @@ public class FoodAdapter extends ArrayAdapter<Food> {
         nameText.setText(myFood.toString());
         priceText.setText(Double.toString(myFood.getPrice()));
         image.setImageResource(myFood.getImageResourceID());
+        descText.setText(myFood.getDesc());
 
         // Step 3: Return the completed view to render on screen
         return convertView;
