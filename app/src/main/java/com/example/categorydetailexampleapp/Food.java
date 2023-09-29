@@ -1,12 +1,7 @@
 package com.example.categorydetailexampleapp;
 
-import android.media.Image;
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import androidx.annotation.NonNull;
-
-import java.util.ArrayList;
 
 public class Food implements Parcelable {
     private String name;
@@ -26,9 +21,9 @@ public class Food implements Parcelable {
             new Food("Breadsticks", 3.99, "crunchy, warm, and soft. Butter on the side.", R.drawable.breadsticks),
     };
     public static final Food[] dinnerItems = {
-            new Food("Wings", 8.99, "Chicken Wings. Choose between ranch, spicy, or buffalo sauce.", R.drawable.wings),
+            new Food("Wings", 8.99, "Chicken Wings. Choose between ranch, spicy, or buffalo sauce.", R.drawable.clubsandwich),
             new Food("Club Sandwich", 10.99, "Choose between chicken, bacon, or eggs.", R.drawable.clubsandwich),
-            new Food("Chicken Tikka Masala", 11.99, "Spicy chicken curry with rice", R.drawable.chickentikkamasala),
+            new Food("Chicken", 11.99, "Spicy chicken curry with rice", R.drawable.masala),
     };
 
 
